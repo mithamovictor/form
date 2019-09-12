@@ -1,0 +1,100 @@
+body {
+  background: rgb(202, 160, 160);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  padding: 1rem;
+  box-shadow: 0 0 3px 0 #0a0a0a;
+  max-width: 500px;
+  border-radius: 10px;
+  background: #dfdfdf;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.price-input {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-input label {
+  margin-right: 1rem;
+}
+
+.price-input input {
+  flex-grow: 1;
+  max-width: 24rem;
+}
+
+input,
+textarea {
+  padding: 0.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #8a8a8a;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error {
+  color: #c00303;
+  background: #ffcdcd;
+  border: 1px solid #c00303;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.err {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #c00303;
+}
+
+.success {
+  background: #95ff95;
+  border-radius: 5px;
+  border: 1px solid #006f00;
+  color: #006f00;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.button {
+  border: none;
+  background: #f97500;
+  padding: 0.3rem 1rem;
+  box-shadow: 2px 2px 5px 0 #0a0a0a;
+}
+
+.button:active,
+.button:focus {
+  box-shadow: inset 0 0 5px 0 #0a0a0a;
+}
+
+.button.remove-button {
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  color: #ff0000;
+}
